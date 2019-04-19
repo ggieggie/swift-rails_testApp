@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2468B368041F2D0FCEF233D /* Pods_swift_rails_testApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4B02D3F05AA9CB3B92E339 /* Pods_swift_rails_testApp.framework */; };
 		D9E96688226A04D0004DE8D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E96687226A04D0004DE8D4 /* AppDelegate.swift */; };
 		D9E9668A226A04D0004DE8D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E96689226A04D0004DE8D4 /* ViewController.swift */; };
 		D9E9668D226A04D0004DE8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E9668B226A04D0004DE8D4 /* Main.storyboard */; };
 		D9E9668F226A04D1004DE8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E9668E226A04D1004DE8D4 /* Assets.xcassets */; };
 		D9E96692226A04D1004DE8D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E96690226A04D1004DE8D4 /* LaunchScreen.storyboard */; };
+		D9E9669A226A101D004DE8D4 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = D9E96699226A101D004DE8D4 /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		458C45BA34B8D97C822CBD97 /* Pods-swift-rails_testApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-rails_testApp.release.xcconfig"; path = "Target Support Files/Pods-swift-rails_testApp/Pods-swift-rails_testApp.release.xcconfig"; sourceTree = "<group>"; };
+		4D862A1E29794EBAA608ECD7 /* Pods-swift-rails_testApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-rails_testApp.debug.xcconfig"; path = "Target Support Files/Pods-swift-rails_testApp/Pods-swift-rails_testApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4B02D3F05AA9CB3B92E339 /* Pods_swift_rails_testApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_rails_testApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E96684226A04D0004DE8D4 /* swift-rails_testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-rails_testApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E96687226A04D0004DE8D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E96689226A04D0004DE8D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D9E9668E226A04D1004DE8D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9E96691226A04D1004DE8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9E96693226A04D1004DE8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E96699226A101D004DE8D4 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2468B368041F2D0FCEF233D /* Pods_swift_rails_testApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480035BB6244231603316EBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF4B02D3F05AA9CB3B92E339 /* Pods_swift_rails_testApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D981A0F7542B8440C9EB4A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D862A1E29794EBAA608ECD7 /* Pods-swift-rails_testApp.debug.xcconfig */,
+				458C45BA34B8D97C822CBD97 /* Pods-swift-rails_testApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D9E9667B226A04D0004DE8D4 = {
 			isa = PBXGroup;
 			children = (
 				D9E96686226A04D0004DE8D4 /* swift-rails_testApp */,
 				D9E96685226A04D0004DE8D4 /* Products */,
+				5D981A0F7542B8440C9EB4A8 /* Pods */,
+				480035BB6244231603316EBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		D9E96686226A04D0004DE8D4 /* swift-rails_testApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9E96699226A101D004DE8D4 /* Models */,
 				D9E96687226A04D0004DE8D4 /* AppDelegate.swift */,
 				D9E96689226A04D0004DE8D4 /* ViewController.swift */,
 				D9E9668B226A04D0004DE8D4 /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E96696226A04D1004DE8D4 /* Build configuration list for PBXNativeTarget "swift-rails_testApp" */;
 			buildPhases = (
+				2C21F6982108F0C16C97F29C /* [CP] Check Pods Manifest.lock */,
 				D9E96680226A04D0004DE8D4 /* Sources */,
 				D9E96681226A04D0004DE8D4 /* Frameworks */,
 				D9E96682226A04D0004DE8D4 /* Resources */,
+				243F94F8AA35132FEF34DB31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +153,59 @@
 			files = (
 				D9E96692226A04D1004DE8D4 /* LaunchScreen.storyboard in Resources */,
 				D9E9668F226A04D1004DE8D4 /* Assets.xcassets in Resources */,
+				D9E9669A226A101D004DE8D4 /* Models in Resources */,
 				D9E9668D226A04D0004DE8D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		243F94F8AA35132FEF34DB31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swift-rails_testApp/Pods-swift-rails_testApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swift-rails_testApp/Pods-swift-rails_testApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C21F6982108F0C16C97F29C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-rails_testApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9E96680226A04D0004DE8D4 /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		D9E96697226A04D1004DE8D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D862A1E29794EBAA608ECD7 /* Pods-swift-rails_testApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +375,7 @@
 		};
 		D9E96698226A04D1004DE8D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458C45BA34B8D97C822CBD97 /* Pods-swift-rails_testApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
